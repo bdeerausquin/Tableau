@@ -21,378 +21,6 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='Centres docents_voronoi_polygons' inline='true' name='federated.0hl618i0xnot7e1e0sb9y03p5pid' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Centres docents_voronoi_polygons' name='textscan.0y6esmy0l39s5t12404lx0xrrl90'>
-            <connection class='textscan' directory='C:/Users/bdeer/Documents/Master UOC Data Science/2024_Q2/M2.859 - Visualización de datos/PEC2/Entrega' filename='Centres docents_voronoi_polygons.csv' password='' server='' workgroup-auth-mode='as-is' />
-          </named-connection>
-        </named-connections>
-        <relation connection='textscan.0y6esmy0l39s5t12404lx0xrrl90' name='Centres docents_voronoi_polygons.csv' table='[Centres docents_voronoi_polygons#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
-            <column datatype='integer' name='Polygon ID' ordinal='0' />
-            <column datatype='real' name='Vertex X' ordinal='1' />
-            <column datatype='real' name='Vertex Y' ordinal='2' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Polygon ID</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Polygon ID]</local-name>
-            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
-            <remote-alias>Polygon ID</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Vertex X</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Vertex X]</local-name>
-            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
-            <remote-alias>Vertex X</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Vertex Y</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Vertex Y]</local-name>
-            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
-            <remote-alias>Vertex Y</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='integer' name='[Polygon ID]' role='dimension' type='ordinal' />
-      <column caption='Centres docents_voronoi_polygons.csv' datatype='table' name='[__tableau_internal_object_id__].[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]' role='measure' type='quantitative' />
-      <column-instance column='[Polygon ID]' derivation='None' name='[none:Polygon ID:ok]' pivot='key' type='ordinal' />
-      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/bdeer/Documents/Master UOC Data Science/2024_Q2/M2.859 - Visualización de datos/PEC2/Entrega/Centres docents_voronoi_polygons.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2024 07:34:51 PM' username='tableau_internal_user'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='Centres docents_voronoi_polygons' increment-value='%null%' refresh-type='create' rows-inserted='72' timestamp-start='2024-11-14 19:34:51.023' />
-          </refresh>
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>Polygon ID</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Polygon ID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Polygon ID</remote-alias>
-              <ordinal>0</ordinal>
-              <family>Centres docents_voronoi_polygons.csv</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>72</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Vertex X</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[Vertex X]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Vertex X</remote-alias>
-              <ordinal>1</ordinal>
-              <family>Centres docents_voronoi_polygons.csv</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>35</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Vertex Y</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[Vertex Y]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Vertex Y</remote-alias>
-              <ordinal>2</ordinal>
-              <family>Centres docents_voronoi_polygons.csv</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>35</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:Polygon ID:ok]' type='palette'>
-            <map to='#499894'>
-              <bucket>9</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>29</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>49</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>69</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>1</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>21</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>41</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>61</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>5</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>25</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>45</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>65</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>13</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>33</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>53</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>10</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>30</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>50</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>70</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>6</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>26</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>46</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>66</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>19</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>39</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>59</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>2</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>22</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>42</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>62</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>17</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>37</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>57</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>7</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>27</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>47</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>67</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>14</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>34</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>54</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>15</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>35</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>55</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>18</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>38</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>58</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>20</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>40</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>60</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>11</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>31</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>51</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>71</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>8</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>28</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>48</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>68</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>3</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>23</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>43</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>63</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>16</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>36</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>56</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>12</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>32</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>52</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>72</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>4</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>24</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>44</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>64</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <object-graph>
-        <objects>
-          <object caption='Centres docents_voronoi_polygons.csv' id='Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC'>
-            <properties context=''>
-              <relation connection='textscan.0y6esmy0l39s5t12404lx0xrrl90' name='Centres docents_voronoi_polygons.csv' table='[Centres docents_voronoi_polygons#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
-                  <column datatype='integer' name='Polygon ID' ordinal='0' />
-                  <column datatype='real' name='Vertex X' ordinal='1' />
-                  <column datatype='real' name='Vertex Y' ordinal='2' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
     <datasource caption='Financial Aid to Ukraine (Copy of Ukraine-Russia War Graphics )' inline='true' name='federated.1gu8w790i32nsq1h6do070zj2tcc' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -1041,6 +669,378 @@
         </objects>
       </object-graph>
     </datasource>
+    <datasource caption='Centres docents_voronoi_polygons' inline='true' name='federated.0hl618i0xnot7e1e0sb9y03p5pid' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Centres docents_voronoi_polygons' name='textscan.0y6esmy0l39s5t12404lx0xrrl90'>
+            <connection class='textscan' directory='C:/Users/bdeer/Documents/Master UOC Data Science/2024_Q2/M2.859 - Visualización de datos/PEC2/Entrega' filename='Centres docents_voronoi_polygons.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0y6esmy0l39s5t12404lx0xrrl90' name='Centres docents_voronoi_polygons.csv' table='[Centres docents_voronoi_polygons#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Polygon ID' ordinal='0' />
+            <column datatype='real' name='Vertex X' ordinal='1' />
+            <column datatype='real' name='Vertex Y' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Polygon ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Polygon ID]</local-name>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias>Polygon ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vertex X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vertex X]</local-name>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias>Vertex X</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vertex Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vertex Y]</local-name>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias>Vertex Y</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Polygon ID]' role='dimension' type='ordinal' />
+      <column caption='Centres docents_voronoi_polygons.csv' datatype='table' name='[__tableau_internal_object_id__].[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]' role='measure' type='quantitative' />
+      <column-instance column='[Polygon ID]' derivation='None' name='[none:Polygon ID:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/bdeer/Documents/Master UOC Data Science/2024_Q2/M2.859 - Visualización de datos/PEC2/Entrega/Centres docents_voronoi_polygons.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2024 07:34:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Centres docents_voronoi_polygons' increment-value='%null%' refresh-type='create' rows-inserted='72' timestamp-start='2024-11-14 19:34:51.023' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Polygon ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Polygon ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Polygon ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Centres docents_voronoi_polygons.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vertex X</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vertex X]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vertex X</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Centres docents_voronoi_polygons.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vertex Y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vertex Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vertex Y</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Centres docents_voronoi_polygons.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Polygon ID:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>69</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>61</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>45</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>65</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>33</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>53</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>50</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>70</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>66</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>39</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>59</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>62</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>37</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>57</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>67</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>34</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>55</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>38</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>58</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>40</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>60</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>51</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>71</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>68</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>63</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>36</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>56</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>52</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>72</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>64</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Centres docents_voronoi_polygons.csv' id='Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC'>
+            <properties context=''>
+              <relation connection='textscan.0y6esmy0l39s5t12404lx0xrrl90' name='Centres docents_voronoi_polygons.csv' table='[Centres docents_voronoi_polygons#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='Polygon ID' ordinal='0' />
+                  <column datatype='real' name='Vertex X' ordinal='1' />
+                  <column datatype='real' name='Vertex Y' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
   </datasources>
   <worksheets>
     <worksheet name='Bee swarm'>
@@ -1214,7 +1214,7 @@
       <simple-id uuid='{8F5DE8F9-3661-4329-A9B1-2B1DDCD0D099}' />
     </worksheet>
   </worksheets>
-  <windows source-height='51'>
+  <windows saved-dpi-scale-factor='1.25' source-height='58'>
     <window class='worksheet' maximized='true' name='BubbleChart'>
       <cards>
         <edge name='left'>
@@ -1225,13 +1225,13 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='38'>
+          <strip size='37'>
             <card type='columns' />
           </strip>
-          <strip size='38'>
+          <strip size='37'>
             <card type='rows' />
           </strip>
-          <strip size='38'>
+          <strip size='37'>
             <card type='title' />
           </strip>
         </edge>
@@ -1251,6 +1251,37 @@
       </viewpoint>
       <simple-id uuid='{C59815B6-C89D-413F-AE61-44924DF7BE99}' />
     </window>
+    <window class='worksheet' name='Bee swarm'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:Total aid (bin):ok]</field>
+            <field>[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2AC29700-D7AD-445F-825C-E859A8A80009}' />
+    </window>
     <window class='worksheet' name='Voronoy'>
       <cards>
         <edge name='left'>
@@ -1267,7 +1298,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
@@ -1286,253 +1317,209 @@
       </viewpoint>
       <simple-id uuid='{57FD8CFF-8066-4E04-A167-BA32DF022AAF}' />
     </window>
-    <window class='worksheet' name='Bee swarm'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='31'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <viewpoint>
-        <highlight>
-          <color-one-way>
-            <field>[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:Total aid (bin):ok]</field>
-            <field>[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]</field>
-          </color-one-way>
-        </highlight>
-      </viewpoint>
-      <simple-id uuid='{2AC29700-D7AD-445F-825C-E859A8A80009}' />
-    </window>
   </windows>
   <thumbnails>
     <thumbnail height='192' name='Bee swarm' width='192'>
       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
-      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
-      AABJRU5ErkJggg==
+      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
+      A21a6xWDCl/tAAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='192' name='BubbleChart' width='192'>
       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
-      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
+      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
     </thumbnail>
     <thumbnail height='192' name='Voronoy' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
