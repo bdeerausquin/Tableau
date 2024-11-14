@@ -1,0 +1,1698 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='PEC2_Tableau_Visualization' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Centres docents_voronoi_polygons' inline='true' name='federated.0hl618i0xnot7e1e0sb9y03p5pid' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Centres docents_voronoi_polygons' name='textscan.0y6esmy0l39s5t12404lx0xrrl90'>
+            <connection class='textscan' directory='C:/Users/bdeer/Documents/Master UOC Data Science/2024_Q2/M2.859 - Visualización de datos/PEC2/Entrega' filename='Centres docents_voronoi_polygons.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0y6esmy0l39s5t12404lx0xrrl90' name='Centres docents_voronoi_polygons.csv' table='[Centres docents_voronoi_polygons#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Polygon ID' ordinal='0' />
+            <column datatype='real' name='Vertex X' ordinal='1' />
+            <column datatype='real' name='Vertex Y' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Polygon ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Polygon ID]</local-name>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias>Polygon ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vertex X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vertex X]</local-name>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias>Vertex X</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vertex Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vertex Y]</local-name>
+            <parent-name>[Centres docents_voronoi_polygons.csv]</parent-name>
+            <remote-alias>Vertex Y</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Polygon ID]' role='dimension' type='ordinal' />
+      <column caption='Centres docents_voronoi_polygons.csv' datatype='table' name='[__tableau_internal_object_id__].[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]' role='measure' type='quantitative' />
+      <column-instance column='[Polygon ID]' derivation='None' name='[none:Polygon ID:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/bdeer/Documents/Master UOC Data Science/2024_Q2/M2.859 - Visualización de datos/PEC2/Entrega/Centres docents_voronoi_polygons.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2024 07:34:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Centres docents_voronoi_polygons' increment-value='%null%' refresh-type='create' rows-inserted='72' timestamp-start='2024-11-14 19:34:51.023' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Polygon ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Polygon ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Polygon ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Centres docents_voronoi_polygons.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vertex X</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vertex X]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vertex X</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Centres docents_voronoi_polygons.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vertex Y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vertex Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vertex Y</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Centres docents_voronoi_polygons.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Polygon ID:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>69</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>61</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>45</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>65</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>33</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>53</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>50</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>70</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>66</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>39</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>59</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>62</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>37</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>57</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>67</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>34</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>55</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>38</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>58</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>40</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>60</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>51</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>71</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>68</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>63</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>36</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>56</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>52</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>72</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>64</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Centres docents_voronoi_polygons.csv' id='Centres docents_voronoi_polygons.csv_5A04949C503B4AFBB3ECF9EA0C1A42BC'>
+            <properties context=''>
+              <relation connection='textscan.0y6esmy0l39s5t12404lx0xrrl90' name='Centres docents_voronoi_polygons.csv' table='[Centres docents_voronoi_polygons#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='Polygon ID' ordinal='0' />
+                  <column datatype='real' name='Vertex X' ordinal='1' />
+                  <column datatype='real' name='Vertex Y' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Financial Aid to Ukraine (Copy of Ukraine-Russia War Graphics )' inline='true' name='federated.1gu8w790i32nsq1h6do070zj2tcc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Copy of Ukraine-Russia War Graphics' name='cloudfile:googledrive-excel-direct.0y8v6v50t20nof15tvzmm0gvwvku'>
+            <connection class='cloudfile:googledrive-excel-direct' cleaning='no' cloudFileExtension='xlsx' cloudFileId='1KIPLuHHWCTvJwPtBJ2ZUcYwrlvYF81NPBI3Bt94s7-A' cloudFileMetadata_-_folder='14SZqiCyG7SyDORZyhwww_vktI4Q6UeZQ' cloudFileName='Copy of Ukraine-Russia War Graphics .xlsx' cloudFileProvider='googledrive' cloudFileRequestURL='https://www.googleapis.com/drive/v3/files/1KIPLuHHWCTvJwPtBJ2ZUcYwrlvYF81NPBI3Bt94s7-A/export?mimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' compat='no' dataRefreshTime='' filename='Copy of Ukraine-Russia War Graphics .xlsx' interpretationMode='0' server='' server-oauth='' username='bdeerausquin@uoc.edu' validate='no' workgroup-auth-mode='prompt' />
+          </named-connection>
+        </named-connections>
+        <relation connection='cloudfile:googledrive-excel-direct.0y8v6v50t20nof15tvzmm0gvwvku' name='Financial Aid to Ukraine' table='[&apos;Financial Aid to Ukraine$&apos;]' type='table'>
+          <columns gridOrigin='A1:R45:no:A1:R45:0' header='yes' outcome='2'>
+            <column datatype='string' name='source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/' ordinal='0' />
+            <column datatype='integer' name='EU member' ordinal='1' />
+            <column datatype='real' name='Financial aid' ordinal='2' />
+            <column datatype='real' name='Humanitarian' ordinal='3' />
+            <column datatype='real' name='Military aid as of 16th Jan 2024' ordinal='4' />
+            <column datatype='integer' name='added after Jan 16th 2024' ordinal='5' />
+            <column datatype='string' name='type' ordinal='6' />
+            <column datatype='real' name='Total aid' ordinal='7' />
+            <column datatype='real' name='Total military aid plus additions' ordinal='8' />
+            <column datatype='real' name='Total Military Aid as % of GDP' ordinal='9' />
+            <column datatype='integer' name='GDP (2021)' ordinal='10' />
+            <column datatype='real' name='Total Aid as % of GDP' ordinal='11' />
+            <column datatype='real' name='Share in EU commitments' ordinal='12' />
+            <column datatype='real' name='% of EU commitments' ordinal='13' />
+            <column datatype='string' name='source name' ordinal='14' />
+            <column datatype='string' name='source 1' ordinal='15' />
+            <column datatype='string' name='source 2' ordinal='16' />
+            <column datatype='string' name='source 3' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:R45:no:A1:R45:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EU member</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EU member]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>EU member</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Financial aid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Financial aid]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Financial aid</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Humanitarian</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Humanitarian]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Humanitarian</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Military aid as of 16th Jan 2024</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Military aid as of 16th Jan 2024]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Military aid as of 16th Jan 2024</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>added after Jan 16th 2024</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[added after Jan 16th 2024]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>added after Jan 16th 2024</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total aid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total aid]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Total aid</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total military aid plus additions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total military aid plus additions]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Total military aid plus additions</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Military Aid as % of GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Military Aid as % of GDP]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Total Military Aid as % of GDP</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP (2021)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GDP (2021)]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>GDP (2021)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Aid as % of GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Aid as % of GDP]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Total Aid as % of GDP</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share in EU commitments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share in EU commitments]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>Share in EU commitments</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% of EU commitments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% of EU commitments]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>% of EU commitments</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source name]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>source name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source 1]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>source 1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source 2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source 2]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>source 2</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source 3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source 3]</local-name>
+            <parent-name>[Financial Aid to Ukraine]</parent-name>
+            <remote-alias>source 3</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Rank Country Total Aid' datatype='integer' name='[Calculation_1212312739244486656]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(SUM([Total aid]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='BI' datatype='integer' name='[Calculation_1212312739253727236]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF INDEX()%2=0 THEN INDEX()-1 ELSE INDEX()*-1+1 END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Gdp (2021)' datatype='integer' name='[GDP (2021)]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Total aid (bin)' datatype='integer' name='[Total aid (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Total aid]' peg='0' size='6.83' />
+      </column>
+      <column datatype='real' name='[Total aid]' role='measure' type='quantitative' />
+      <column caption='Financial Aid to Ukraine' datatype='table' name='[__tableau_internal_object_id__].[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]' role='measure' type='quantitative' />
+      <column caption='Source 1' datatype='string' hidden='true' name='[source 1]' role='dimension' type='nominal' />
+      <column caption='Source 2' datatype='string' hidden='true' name='[source 2]' role='dimension' type='nominal' />
+      <column caption='Source 3' datatype='string' hidden='true' name='[source 3]' role='dimension' type='nominal' />
+      <column caption='Source Name' datatype='string' hidden='true' name='[source name]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/bdeer/Documents/Master UOC Data Science/2024_Q2/M2.859 - Visualización de datos/PEC2/Entrega/Financial Aid to Ukraine (Copy of Ukraine-Russia War Graphics ).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2024 07:08:46 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Financial Aid to Ukraine (Copy of Ukraine-Russia War Graphics )' increment-value='%null%' refresh-type='create' rows-inserted='41' timestamp-start='2024-11-14 19:08:45.897' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EU member</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EU member]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EU member</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Financial aid</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Financial aid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Financial aid</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Humanitarian</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Humanitarian]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Humanitarian</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Military aid as of 16th Jan 2024</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Military aid as of 16th Jan 2024]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Military aid as of 16th Jan 2024</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>added after Jan 16th 2024</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[added after Jan 16th 2024]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>added after Jan 16th 2024</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total aid</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total aid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total aid</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total military aid plus additions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total military aid plus additions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total military aid plus additions</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Military Aid as % of GDP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Military Aid as % of GDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Military Aid as % of GDP</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP (2021)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GDP (2021)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP (2021)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Aid as % of GDP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Aid as % of GDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Aid as % of GDP</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Share in EU commitments</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Share in EU commitments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Share in EU commitments</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% of EU commitments</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% of EU commitments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% of EU commitments</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Financial Aid to Ukraine</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='categorical' column='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' filter-group='2'>
+          <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+            <groupfilter function='level-members' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' />
+            <groupfilter function='union'>
+              <groupfilter function='member' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' member='%null%' />
+              <groupfilter function='member' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' member='&quot;EU (Commission &amp; Council)&quot;' />
+              <groupfilter function='member' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' member='&quot;Total&quot;' />
+            </groupfilter>
+          </groupfilter>
+        </filter>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='41' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/' />
+        <field-sort-custom-order field='Calculation_1212312739244486656' />
+        <field-sort-custom-order field='EU member' />
+        <field-sort-custom-order field='Calculation_1212312739253727236' />
+        <field-sort-custom-order field='Financial aid' />
+        <field-sort-custom-order field='Humanitarian' />
+        <field-sort-custom-order field='Military aid as of 16th Jan 2024' />
+        <field-sort-custom-order field='added after Jan 16th 2024' />
+        <field-sort-custom-order field='type' />
+        <field-sort-custom-order field='Total aid' />
+        <field-sort-custom-order field='Total military aid plus additions' />
+        <field-sort-custom-order field='Total Military Aid as % of GDP' />
+        <field-sort-custom-order field='GDP (2021)' />
+        <field-sort-custom-order field='Total Aid as % of GDP' />
+        <field-sort-custom-order field='Share in EU commitments' />
+        <field-sort-custom-order field='% of EU commitments' />
+        <field-sort-custom-order field='source name' />
+        <field-sort-custom-order field='source 1' />
+        <field-sort-custom-order field='source 2' />
+        <field-sort-custom-order field='source 3' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <filter class='categorical' column='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' member='%null%' />
+            <groupfilter function='member' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' member='&quot;EU (Commission &amp; Council)&quot;' />
+            <groupfilter function='member' level='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' member='&quot;Total&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='Financial Aid to Ukraine' id='Financial Aid to Ukraine_CDF2C2A6FDB14F3192664FB92CA599DE'>
+            <properties context=''>
+              <relation connection='cloudfile:googledrive-excel-direct.0y8v6v50t20nof15tvzmm0gvwvku' name='Financial Aid to Ukraine' table='[&apos;Financial Aid to Ukraine$&apos;]' type='table'>
+                <columns gridOrigin='A1:R45:no:A1:R45:0' header='yes' outcome='2'>
+                  <column datatype='string' name='source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/' ordinal='0' />
+                  <column datatype='integer' name='EU member' ordinal='1' />
+                  <column datatype='real' name='Financial aid' ordinal='2' />
+                  <column datatype='real' name='Humanitarian' ordinal='3' />
+                  <column datatype='real' name='Military aid as of 16th Jan 2024' ordinal='4' />
+                  <column datatype='integer' name='added after Jan 16th 2024' ordinal='5' />
+                  <column datatype='string' name='type' ordinal='6' />
+                  <column datatype='real' name='Total aid' ordinal='7' />
+                  <column datatype='real' name='Total military aid plus additions' ordinal='8' />
+                  <column datatype='real' name='Total Military Aid as % of GDP' ordinal='9' />
+                  <column datatype='integer' name='GDP (2021)' ordinal='10' />
+                  <column datatype='real' name='Total Aid as % of GDP' ordinal='11' />
+                  <column datatype='real' name='Share in EU commitments' ordinal='12' />
+                  <column datatype='real' name='% of EU commitments' ordinal='13' />
+                  <column datatype='string' name='source name' ordinal='14' />
+                  <column datatype='string' name='source 1' ordinal='15' />
+                  <column datatype='string' name='source 2' ordinal='16' />
+                  <column datatype='string' name='source 3' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Bee swarm'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Aid to Ukraine (Copy of Ukraine-Russia War Graphics )' name='federated.1gu8w790i32nsq1h6do070zj2tcc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gu8w790i32nsq1h6do070zj2tcc'>
+            <column caption='BI' datatype='integer' name='[Calculation_1212312739253727236]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF INDEX()%2=0 THEN INDEX()-1 ELSE INDEX()*-1+1 END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='None' caption='Total aid (bin)' datatype='integer' name='[Total aid (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Total aid]' peg='0' size='6.83' />
+            </column>
+            <column datatype='real' name='[Total aid]' role='measure' type='quantitative' />
+            <column-instance column='[Total aid (bin)]' derivation='None' name='[none:Total aid (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' derivation='None' name='[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]' pivot='key' type='nominal' />
+            <column caption='Country' datatype='string' name='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' role='dimension' type='nominal' />
+            <column-instance column='[Total aid]' derivation='Sum' name='[sum:Total aid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1212312739253727236]' derivation='User' name='[usr:Calculation_1212312739253727236:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1gu8w790i32nsq1h6do070zj2tcc].[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1gu8w790i32nsq1h6do070zj2tcc].[usr:Calculation_1212312739253727236:qk:2]' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]' />
+              <lod column='[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:Total aid (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gu8w790i32nsq1h6do070zj2tcc].[usr:Calculation_1212312739253727236:qk:2]</rows>
+        <cols>[federated.1gu8w790i32nsq1h6do070zj2tcc].[sum:Total aid:qk]</cols>
+        <show-full-range>
+          <column>[federated.1gu8w790i32nsq1h6do070zj2tcc].[Total aid (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{275B879F-4B9D-4AAB-B070-4AAB9C4CAE69}' />
+    </worksheet>
+    <worksheet name='BubbleChart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Aid to Ukraine (Copy of Ukraine-Russia War Graphics )' name='federated.1gu8w790i32nsq1h6do070zj2tcc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gu8w790i32nsq1h6do070zj2tcc'>
+            <column datatype='real' name='[Financial aid]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Humanitarian]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Military aid as of 16th Jan 2024]' role='measure' type='quantitative' />
+            <column-instance column='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' derivation='None' name='[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]' pivot='key' type='nominal' />
+            <column caption='Country' datatype='string' name='[source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/]' role='dimension' type='nominal' />
+            <column-instance column='[Financial aid]' derivation='Sum' name='[sum:Financial aid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Humanitarian]' derivation='Sum' name='[sum:Humanitarian:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Military aid as of 16th Jan 2024]' derivation='Sum' name='[sum:Military aid as of 16th Jan 2024:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]' />
+              <size column='[federated.1gu8w790i32nsq1h6do070zj2tcc].[sum:Military aid as of 16th Jan 2024:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='5.3785600662231445' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gu8w790i32nsq1h6do070zj2tcc].[sum:Humanitarian:qk]</rows>
+        <cols>[federated.1gu8w790i32nsq1h6do070zj2tcc].[sum:Financial aid:qk]</cols>
+      </table>
+      <simple-id uuid='{E7658CB2-82C8-4374-B3F3-F1CD568EC8E6}' />
+    </worksheet>
+    <worksheet name='Voronoy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Centres docents_voronoi_polygons' name='federated.0hl618i0xnot7e1e0sb9y03p5pid' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hl618i0xnot7e1e0sb9y03p5pid'>
+            <column datatype='integer' name='[Polygon ID]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Vertex X]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Vertex Y]' role='measure' type='quantitative' />
+            <column-instance column='[Polygon ID]' derivation='None' name='[none:Polygon ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Vertex X]' derivation='Sum' name='[sum:Vertex X:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Vertex Y]' derivation='Sum' name='[sum:Vertex Y:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hl618i0xnot7e1e0sb9y03p5pid].[none:Polygon ID:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='1' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='2' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='3' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='4' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='5' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='6' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='7' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='8' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='9' />
+              <groupfilter function='member' level='[none:Polygon ID:ok]' member='10' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hl618i0xnot7e1e0sb9y03p5pid].[none:Polygon ID:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.ladataviz.extension.voronoi' extension-url='https://extensions.ladataviz.com/voronoi?licenseKey=free' extension-version='1.0.0' instance-id='63DDE3F4883443279AC0BC2DC90CB6DC'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod column='[federated.0hl618i0xnot7e1e0sb9y03p5pid].[none:Polygon ID:ok]' />
+              <_.fcp.VizExtensions.true...custom column='[federated.0hl618i0xnot7e1e0sb9y03p5pid].[none:Polygon ID:ok]' custom-type-name='color' />
+              <lod column='[federated.0hl618i0xnot7e1e0sb9y03p5pid].[sum:Vertex X:qk]' />
+              <lod column='[federated.0hl618i0xnot7e1e0sb9y03p5pid].[sum:Vertex Y:qk]' />
+              <lod column='[federated.0hl618i0xnot7e1e0sb9y03p5pid].[none:Polygon ID:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8F5DE8F9-3661-4329-A9B1-2B1DDCD0D099}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='BubbleChart'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.1gu8w790i32nsq1h6do070zj2tcc].[sum:Military aid as of 16th Jan 2024:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C59815B6-C89D-413F-AE61-44924DF7BE99}' />
+    </window>
+    <window class='worksheet' name='Voronoy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0hl618i0xnot7e1e0sb9y03p5pid].[none:Polygon ID:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hl618i0xnot7e1e0sb9y03p5pid].[none:Polygon ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57FD8CFF-8066-4E04-A167-BA32DF022AAF}' />
+    </window>
+    <window class='worksheet' name='Bee swarm'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:Total aid (bin):ok]</field>
+            <field>[federated.1gu8w790i32nsq1h6do070zj2tcc].[none:source: https://www.ifw-kiel.de/publications/ukraine-support-tracker-data-20758/:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2AC29700-D7AD-445F-825C-E859A8A80009}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Bee swarm' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='BubbleChart' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Voronoy' width='192'>
+      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
+      HQiR5v8DK58lYFOGG7IAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.ladataviz.extension.voronoi'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Voronoi Treemap</description>
+          <author email='tristan@ladataviz.com' name='Jessica Bautista / Tristan Guillevin' organization='LaDataViz' website='https://www.ladataviz.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://extensions.ladataviz.com/voronoi?licenseKey=free</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='size'>
+            <display-name>Size</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='size' />
+          </encoding>
+          <encoding id='color'>
+            <display-name>Color</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-dimension</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='color' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Voronoi Treemap</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Voronoy' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
